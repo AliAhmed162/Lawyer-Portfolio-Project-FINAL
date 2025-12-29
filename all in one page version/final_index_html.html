@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Portfolio - Mr. X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">MR. X <span class="accent">LAW</span></div>
+            
+            <button id="menu-btn" class="menu-btn">&#9776;</button>
+
+            <nav id="nav-links" class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Practice Areas</a>
+                <a href="#faq">FAQ</a>
+                <!-- NEW -->
+                <a href="#Reviews">Reviews</a>
+                <a href="#resources">Resources</a>
+                <!-- NEW  -->                
+                <a href="#contact" class="cta-btn">Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div> 
+        <div class="container hero-content">
+            <h1>Justice in the Darkest Times.</h1>
+            <p>Unrelenting defense. Strategic counsel. We fight for your future when the stakes are highest.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Free Consultation</a>
+                <a href="#about" class="btn-secondary">Meet Mr. X</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">The Attorney</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portrait of Mr. X">
+                </div>
+                <div class="about-text">
+                    <h3>"Silence is not an option."</h3>
+                    <p>Mr. X has spent over 15 years in the trenches of the legal system. Former Senior Prosecutor turned Defense Attorney, he knows how the opposition thinks.</p>
+                    <ul class="about-list">
+                        <li><strong>15+ Years</strong> Experience</li>
+                        <li><strong>500+</strong> Cases Won</li>
+                        <li><strong>Top Rated</strong> in Criminal Defense</li>
+                    </ul>
+                    <p>We don't just represent you; we protect your legacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title">Areas of Practice</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Corporate Law">
+                    <div class="card-content">
+                        <h3>Corporate Litigation</h3>
+                        <p>Protecting your business interests with ruthless efficiency.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Criminal Defense">
+                    <div class="card-content">
+                        <h3>Criminal Defense</h3>
+                        <p>When your freedom is on the line, we provide the shield you need.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Estate Planning">
+                    <div class="card-content">
+                        <h3>Estate Planning</h3>
+                        <p>Securing your assets for the next generation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Clients Resources</h2>
+            <p class="section-subtitle">Click on a question below to reveal the answer.</p>
+            
+            <div id="faq-list" class="faq-container"></div>
+        </div>
+    </section>
+
+    <!-- ========================================================== -->
+
+    <!-- NEW SECTION: Reviews (JSON Data) -->
+    <section id="Reviews" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Clients Reviews</h2>
+            <p class="section-subtitle">Real results from real clients (Data loaded from JSON)</p>
+            <div id="Reviews-list" class="Reviews-grid"></div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Legal Resources (XML Data) -->
+    <section id="resources" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title">Legal Resources</h2>
+            <p class="section-subtitle">Important articles and guides (Data loaded from XML)</p>
+            <div id="resources-list" class="resources-grid"></div>
+        </div>
+    </section>
+    
+    <!-- ========================================================== -->
+
+    <section id="contact" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title">Secure Your Defense</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Ready to discuss your case? Contact us immediately.</p>
+                    <div class="info-item">
+                        <strong>Location:</strong> 
+                        <span>512 Borg EL Arab, Alexandria, Egypt</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone:</strong> 
+                        <span>(123) 456-7890</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong> 
+                        <span>defense@lawyerx.com</span>
+                    </div>
+                    <div class="map-box">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Map View">
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Case Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Briefly describe your situation..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lawyer Mr. X. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- jquery part -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="data_file.js"></script>
+    <script src="jquery_features.js"></script>
+
+</body>
+</html>
